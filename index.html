@@ -161,7 +161,7 @@
       </div>
       
       <!-- About Section Content-->
-      <div class="row my-md-5">
+      <div class="row my-3 my-md-5">
         <div class="d-flex flex-column mx-5 col-lg-4 ms-auto align-items-center justify-content-center custom-bg-dark">
           <h1 class="text-primary text-center">2016-2017</h1>
         </div>
@@ -171,7 +171,7 @@
         </div>
       </div>
 
-      <div class="row my-md-5">
+      <div class="row my-3 my-md-5">
         <div class="d-flex flex-column mx-5 col-lg-4 ms-auto align-items-center justify-content-center custom-bg-dark">
           <h1 class="text-primary text-center">2017-2019</h1>
         </div>
@@ -182,7 +182,7 @@
         </div>
       </div>
 
-      <div class="row my-md-5">
+      <div class="row my-3 my-md-5">
         <div class="d-flex flex-column mx-5 col-lg-4 ms-auto align-items-center justify-content-center custom-bg-dark">
           <h1 class="text-primary text-center">2019-2020</h1>
         </div>
@@ -193,7 +193,7 @@
         </div>
       </div>
 
-      <div class="row my-md-5">
+      <div class="row mt-3 mt-md-5">
         <div class="d-flex flex-column mx-5 col-lg-4 ms-auto align-items-center justify-content-center custom-bg-dark">
           <h1 class="text-primary text-center">2020-Aujourd'hui</h1>
         </div>
@@ -312,9 +312,23 @@
         <!-- Footer Social Icons-->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Quelques liens</h4>
-          <a class="btn btn-outline-primary btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
-          <a class="btn btn-outline-primary btn-social mx-1" href="#!"><i class="fab fa-fw fa-discord"></i></a>
-          <a class="btn btn-outline-primary btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+          <a class="btn btn-outline-primary btn-social mx-1" href="https://github.com/Mar-Nb"><i class="fab fa-fw fa-github"></i></a>
+          <a id="discordLink" class="btn btn-outline-primary btn-social mx-1" data-bs-toggle="tooltip" data-bs-placement="top" title="DaWhistler#2571" onclick="navigator.clipboard.writeText('DaWhistler#2571')"><i class="fab fa-fw fa-discord"></i></a>
+          <a class="btn btn-outline-primary btn-social mx-1" href="https://twitter.com/Jaykussu"><i class="fab fa-fw fa-twitter"></i></a>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header text-primary custom-bg-dark">
+              <img src="assets/favicon-16x16.png" class="rounded me-2" alt="...">
+              <strong class="me-auto">nb-dev.fr</strong>
+              <small>À l'instant</small>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Le texte a bien été copié dans le presse-papiers !
+            </div>
+          </div>
         </div>
   
         <!-- Footer About Text-->

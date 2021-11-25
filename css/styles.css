@@ -11529,3 +11529,5 @@ html {
 .divider-custom.divider-primary .divider-custom-icon {
   color: var(--bs-primary);
 }
+
+.toast-body { background-color: var(--bs-gray-600); }

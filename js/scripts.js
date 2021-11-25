@@ -51,4 +51,20 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Activate the appearance of all the tooltips of the page
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+
+    // Trigger toast for the copy-to-clipboard action on the Discord button
+    var toastTrigger = document.getElementById('discordLink');
+    var toastLiveExample = document.getElementById('liveToast');
+    if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(toastLiveExample);
+            toast.show();
+        });
+    }
+
 });

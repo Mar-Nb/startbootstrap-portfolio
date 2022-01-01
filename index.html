@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="Portfolio de développeur de Mar-Nb. Vous pourrez y retrouver mes projets et aussi divers moyens de me contacter." />
   <meta name="author" content="Mar-Nb" />
+  <meta name="keywords" content="développeur web, Mar-Nb, portfolio, github, nb, nb-dev">
 
   <title>Portfolio - Mar-Nb</title>
 
@@ -65,7 +66,10 @@
       </div>
       
       <!-- Masthead Subheading-->
-      <p class="masthead-subheading font-weight-light mb-0">Développeur Web - Formateur</p>
+      <div id="div-typed">
+        <p>Développeur Web - Formateur</p>
+      </div>
+      <p class="masthead-subheading font-weight-light mb-0"><span id="typed"></span></p>
     </div>
   </header>
 
@@ -257,7 +261,7 @@
                         
             <!-- Message input-->
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+              <textarea class="form-control" id="message" type="text" placeholder="Votre message..."
                 style="height: 10rem" data-sb-validations="required"></textarea>
               <label for="message">Votre message</label>
               <div class="invalid-feedback" data-sb-feedback="message:required">Vous devez entrer un message.</div>
@@ -596,6 +600,19 @@
   <!-- * *                               SB Forms JS                               * *-->
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+  <!-- Typed Effect JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script type="text/javascript">
+    let typed = new Typed("#typed", {
+      stringsElement: '#div-typed',
+      typeSpeed: 100,
+      backSpeed: 75,
+      loop: true,
+      cursorChar: '\u25ae'
+    })
+  </script>
 </body>
 
 </html>
